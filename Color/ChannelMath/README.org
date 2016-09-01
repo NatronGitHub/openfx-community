@@ -3,13 +3,6 @@
 ChannelMath is an OFX Plugin that allows the user to write simple
 math expressions. This plugin is free to use and distribute for any purpose.
 
-** Installation
-
- Put ChannelMath.ofx.bundle in your OFX plugin path. This is usually:
-  /Library/OFX/Plugins
-  If that folder doesn't exist, you can create it. Or, if you prefer, use the environment
-  variable OFX_PLUGIN_PATH.
-
 ** How to Use ChannelMath 
 
 *** Example 1: Monochrome
@@ -42,8 +35,6 @@ My homepage is http://casanico.com
 The OFX plugin standard's home is http://openeffects.org
 
 ** Third Party Licenses 
-
-The libraries used by this program come from:
 
 1. F. Deverney's openfx-misc:
 https://github.com/devernay/openfx-misc
