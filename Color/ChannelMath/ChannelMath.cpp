@@ -39,19 +39,18 @@ Version   Date       Author       Description
 * TODO Find and fix the source of the NaN errors that sometimes occur
  */
 
-#include "ChannelMath.h"
+#include "ofxsImageEffect.h"
+#include "ofxsProcessing.H"
+#include "ofxsMaskMix.h"
+#include "ofxsMacros.h"
+#include "exprtk.hpp"
+
 #include <cstring>
 #include <cmath>
 
 #ifdef _WINDOWS
 #include <windows.h>
 #endif
-
-
-#include "ofxsProcessing.H"
-#include "ofxsMaskMix.h"
-#include "ofxsMacros.h"
-#include "exprtk.hpp"
 
 using namespace OFX;
 using namespace std;
@@ -959,9 +958,5 @@ OFX::ImageEffect* ChannelMathPluginFactory::createInstance(OfxImageEffectHandle 
     return new ChannelMathPlugin(handle);
 }
 
-void getChannelMathPluginID(OFX::PluginFactoryArray &ids)
-{
-    static ChannelMathPluginFactory p(kPluginIdentifier, kPluginVersionMajor, kPluginVersionMinor);
-    ids.push_back(&p);
-}
-
+static ChannelMathPluginFactory p(kPluginIdentifier, kPluginVersionMajor, kPluginVersionMinor);
+mRegisterPluginFactoryInstance(p)

@@ -1,4 +1,4 @@
-PLUGINOBJECTS = ChannelMath.o PluginRegistration.o
+PLUGINOBJECTS = ChannelMath.o
 PLUGINNAME = ChannelMath
 RESOURCES = com.casanico.ChannelMath.png com.casanico.ChannelMath.svg
 
