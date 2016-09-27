@@ -1,0 +1,30 @@
+PATHTOROOT = $(SRCDIR)/Common/OpenFX/Support
+
+include $(PATHTOROOT)/Plugins/Makefile.master
+
+CXXFLAGS += -DOFX_EXTENSIONS_VEGAS -DOFX_EXTENSIONS_NUKE -DOFX_EXTENSIONS_TUTTLE -DOFX_EXTENSIONS_NATRON -DOFX_SUPPORTS_OPENGLRENDER -I$(SRCDIR)/Common/OpenFX-SupportExt
+VPATH += $(SRCDIR)/Common/OpenFX-SupportExt
+
+# ImageMagick
+MAGICK_CXXFLAGS = $(shell pkg-config Magick++ --cflags)
+MAGICK_LINKFLAGS = $(shell pkg-config Magick++ --libs --static)
+
+# libxml2
+XML_CXXFLAGS= $(shell pkg-config libxml-2.0 --cflags)
+XML_LINKFLAGS= $(shell pkg-config libxml-2.0 --libs --static)
+
+# curl
+CURL_CXXFLAGS += $(shell pkg-config libcurl --cflags)
+CURL_LINKFLAGS += $(shell pkg-config libcurl --libs --static)
+
+# MinGW
+ifeq ($(MINGW),1)
+  MAGICK_LINKFLAGS += -lgdi32 -lz -lws2_32 -loleaut32
+endif
+
+# FreeBSD
+ifeq ($(FREEBSD),1)
+  CXXFLAGS += -I/usr/local/include -std=c++11
+  LDFLAGS += -L/usr/local/lib
+endif
+
