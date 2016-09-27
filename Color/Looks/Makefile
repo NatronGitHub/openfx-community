@@ -11,7 +11,7 @@ RESOURCES = \
     net.fxarena.openfx.$(PLUGINNAME).svg \
     net.fxarena.openfx.$(PLUGINNAME).xml \
     $(SRCDIR)/COPYING \
-    Looks.md
+    README.md
 
 include $(SRCDIR)/Makefile.master
 
