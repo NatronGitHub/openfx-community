@@ -5,7 +5,8 @@ OTHER_FILES += \
             README.md \
             Color/Looks/Info.plist \
             Color/Looks/net.fxarena.openfx.Looks.xml \
-            Color/Looks/Makefile
+            Color/Looks/Makefile \
+            Color/Looks/Looks.md
 INCLUDEPATH += . \
             Common/Magick \
             Common/OpenFX-SupportExt \

@@ -9,7 +9,9 @@ SRCDIR = ../..
 RESOURCES = \
     net.fxarena.openfx.$(PLUGINNAME).png \
     net.fxarena.openfx.$(PLUGINNAME).svg \
-    net.fxarena.openfx.$(PLUGINNAME).xml
+    net.fxarena.openfx.$(PLUGINNAME).xml \
+    $(SRCDIR)/COPYING \
+    Looks.md
 
 include $(SRCDIR)/Makefile.master
 

@@ -67,7 +67,7 @@ OFXS_NAMESPACE_ANONYMOUS_ENTER
 #define kPluginRepoURL "https://raw.githubusercontent.com/olear/clut/master"
 #define kPluginRepoZIP "https://github.com/olear/clut/archive/master.zip"
 #define kPluginVersionMajor 1
-#define kPluginVersionMinor 1
+#define kPluginVersionMinor 0
 
 #define kSupportsTiles 0
 #define kSupportsMultiResolution 1
