@@ -1,4 +1,5 @@
-SUBDIRS = Color/Looks Color/ChannelMath
+SUBDIRS = Bundle
+SUBDIRS_NOMULTI = Color/Looks Color/ChannelMath
 
 all: subdirs
 
