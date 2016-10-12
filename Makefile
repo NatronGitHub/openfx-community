@@ -1,5 +1,5 @@
 SUBDIRS = Bundle
-SUBDIRS_NOMULTI = Color/Looks Color/ChannelMath
+SUBDIRS_NOMULTI = Color/Looks Color/ChannelMath Keyer/INK
 
 all: subdirs
 

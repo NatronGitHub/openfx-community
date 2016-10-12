@@ -45,7 +45,6 @@ not their absolute values
 
 */
 
-#include "INK.h"
 #include <algorithm>
 #include <cmath>
 #include <limits>
@@ -1135,8 +1134,5 @@ OFX::ImageEffect* INKPluginFactory::createInstance(OfxImageEffectHandle handle, 
     return new INKPlugin(handle);
 }
 
-void getINKPluginID(OFX::PluginFactoryArray &ids)
-{
-    static INKPluginFactory p(kPluginIdentifier, kPluginVersionMajor, kPluginVersionMinor);
-    ids.push_back(&p);
-}
+static INKPluginFactory p(kPluginIdentifier, kPluginVersionMajor, kPluginVersionMinor);
+mRegisterPluginFactoryInstance(p)

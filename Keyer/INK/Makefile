@@ -1,7 +1,7 @@
-PLUGINOBJECTS = INK.o PluginRegistration.o 
+PLUGINOBJECTS = INK.o
 PLUGINNAME = INK
-RESOURCES = com.casanico.INK.png com.casanico.INK.svg README.txt GNU-GPL-3.0.txt
+RESOURCES = com.casanico.INK.png com.casanico.INK.svg README.org
 
-TOP_SRCDIR = ..
-include $(TOP_SRCDIR)/Makefile.master
+SRCDIR = ../..
+include $(SRCDIR)/Makefile.master
 
