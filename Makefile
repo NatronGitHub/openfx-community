@@ -1,4 +1,4 @@
-SUBDIRS = Color/Looks
+SUBDIRS = Color/Looks Color/ChannelMath
 
 all: subdirs
 
