@@ -15,8 +15,6 @@
  * along with Looks. If not, see <http://www.gnu.org/licenses/gpl-2.0.html>
 */
 
-#include "MagickPlugin.h"
-
 #include <libxml/xmlmemory.h>
 #include <libxml/parser.h>
 #include <curl/curl.h>
@@ -27,6 +25,8 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <cstring>
+
+#include "MagickPlugin.h"
 
 using namespace OFX;
 OFXS_NAMESPACE_ANONYMOUS_ENTER
