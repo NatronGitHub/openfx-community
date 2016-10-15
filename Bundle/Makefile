@@ -2,6 +2,7 @@ PLUGINNAME = Community
 
 PLUGINOBJECTS = \
 Looks.o \
+Opacity.o \
 MagickPlugin.o \
 ChannelMath.o \
 INK.o
@@ -24,6 +25,7 @@ include $(SRCDIR)/Makefile.master
 VPATH += \
 $(SRCDIR)/Common/Magick \
 $(SRCDIR)/Color/Looks \
+$(SRCDIR)/Color/Opacity \
 $(SRCDIR)/Color/ChannelMath \
 $(SRCDIR)/Keyer/INK
 

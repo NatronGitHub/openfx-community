@@ -1,0 +1,3 @@
+# Opacity
+
+Adjust image opacity.

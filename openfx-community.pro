@@ -3,10 +3,13 @@ OTHER_FILES += \
             Makefile.master \
             LICENSE \
             README.md \
+            Bundle/Makefile \
             Color/Looks/Info.plist \
             Color/Looks/net.fxarena.openfx.Looks.xml \
             Color/Looks/Makefile \
-            Color/Looks/README.md
+            Color/Looks/README.md \
+            Filter/Opacity/Makefile \
+            Filter/Opacity/README.md
 INCLUDEPATH += . \
             Common/Magick \
             Common/OpenFX-SupportExt \
@@ -21,4 +24,5 @@ HEADERS += \
             Common/Magick/MagickPlugin.h
 SOURCES += \
             Common/Magick/MagickPlugin.cpp \
-            Color/Looks/Looks.cpp
+            Color/Looks/Looks.cpp \
+            Filter/Opacity/Opacity.cpp
