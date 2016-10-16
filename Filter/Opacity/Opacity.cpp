@@ -1,18 +1,18 @@
 /*
- * This file is part of openfx-arena <https://github.com/olear/openfx-arena>,
- * Copyright (C) 2016 INRIA
+ * Opacity
+ * Copyright (C) 2016 INRIA & Ole-André Rodlie
  *
- * openfx-arena is free software: you can redistribute it and/or modify
+ * This plugin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as published
  * by the Free Software Foundation.
  *
- * openfx-arena is distributed in the hope that it will be useful,
+ * this plugin is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with openfx-arena.  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>
+ * along with the plugin.  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>
 */
 
 #include "MagickPlugin.h"
@@ -56,7 +56,7 @@ public:
     {
         double amount;
         _opacity->getValueAtTime(args.time, amount);
-        if (amount < 1) {
+        if (amount < 1.0) {
             image.evaluate(Magick::AlphaChannel, Magick::MultiplyEvaluateOperator, amount);
         }
     }

@@ -9,7 +9,9 @@ OTHER_FILES += \
             Color/Looks/Makefile \
             Color/Looks/README.md \
             Filter/Opacity/Makefile \
-            Filter/Opacity/README.md
+            Filter/Opacity/README.md \
+            Filter/CannyEdge/Makefile \
+            Filter/CannyEdge/README.md
 INCLUDEPATH += . \
             Common/Magick \
             Common/OpenFX-SupportExt \
@@ -25,4 +27,5 @@ HEADERS += \
 SOURCES += \
             Common/Magick/MagickPlugin.cpp \
             Color/Looks/Looks.cpp \
-            Filter/Opacity/Opacity.cpp
+            Filter/Opacity/Opacity.cpp \
+            Filter/CannyEdge/CannyEdge.cpp

@@ -1,5 +1,5 @@
 SUBDIRS = Bundle
-SUBDIRS_NOMULTI = Color/Looks Color/ChannelMath Keyer/INK Filter/Opacity
+SUBDIRS_NOMULTI = Color/Looks Color/ChannelMath Keyer/INK Filter/Opacity Filter/CannyEdge
 
 all: subdirs
 
