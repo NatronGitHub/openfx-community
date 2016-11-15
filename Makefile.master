@@ -6,8 +6,13 @@ CXXFLAGS += -DOFX_EXTENSIONS_VEGAS -DOFX_EXTENSIONS_NUKE -DOFX_EXTENSIONS_TUTTLE
 VPATH += $(SRCDIR)/Common/OpenFX-SupportExt
 
 # ImageMagick
-MAGICK_CXXFLAGS = $(shell pkg-config Magick++-7.Q32HDRI --cflags)
-MAGICK_LINKFLAGS = $(shell pkg-config Magick++-7.Q32HDRI --libs --static)
+ifeq ($(MAGICK),)
+  MAGICK_FLAGS := ""
+else
+  MAGICK_FLAGS := "."$(MAGICK)
+endif
+MAGICK_CXXFLAGS = $(shell pkg-config Magick++-7$(MAGICK_FLAGS) --cflags)
+MAGICK_LINKFLAGS = $(shell pkg-config Magick++-7$(MAGICK_FLAGS) --libs --static)
 
 # libxml2
 XML_CXXFLAGS= $(shell pkg-config libxml-2.0 --cflags)
