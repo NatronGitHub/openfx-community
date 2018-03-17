@@ -1,6 +1,6 @@
 [submodule "Common/OpenFX"]
 	path = Common/OpenFX
-	url = https://github.com/devernay/openfx
+	url = https://github.com/NatronGitHub/openfx
 [submodule "Common/OpenFX-SupportExt"]
 	path = Common/OpenFX-SupportExt
-	url = https://github.com/devernay/openfx-supportext
+	url = https://github.com/NatronGitHub/openfx-supportext
